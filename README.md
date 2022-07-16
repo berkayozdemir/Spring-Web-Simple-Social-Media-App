@@ -14,7 +14,7 @@ For more open source projects you can visit [my repository][dill] on GitHub.
 
 ## Summary of Project
 
-Firsly you are facing with a login screen, if you dont have an account you can sign up with button on the top of login screen. 
+Firtsly, you are facing with a login screen. If you dont have an account you can sign up with button on the top of login screen. 
 
 After logging in, you can see the flow of posts has been shared by other users on your homepage.In left, you can show your username and count of how many post you have shared. If you want to share a post, you can click the share a post button on the left panel.
 
