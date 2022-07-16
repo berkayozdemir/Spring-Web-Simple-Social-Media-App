@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content="Giriş Yapın"/>
+        <meta name="descriptipn" content="Free programming"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style2.css?version=2"/>
+
+
+
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+
+
+
+
+            <a th:href="@{/performLogout}" >LOGOUT</a>
+
+
+
+
+
+
+        </nav>
+        <hr>
+        <div class="container">
+
+                <div class="leftpanel">
+
+                    <h3 class="username" th:text="${username}">
+                    </h3>
+
+                    <p class="postcount">You posted;</p>
+
+                    <p class="howmany" th:text="${postcount}"></p>
+
+                    <div class="sharepost" >
+
+                        <form th:action="@{/postPage}">
+                        <button type="submit"><i class="fa-solid fa-pencil"> </i>           Share a post.</button>
+
+                    </form>
+                    </div>
+
+                </div>
+                <div class="flow">
+
+                    <div class="post" th:each="msg: ${allPosts}">
+
+                        <div class="subject" th:text="${msg.subject}"></div>
+                        <div class="content" th:text="${msg.content}"></div>
+                        <div class="aboutpost">
+                            <div class="postowner" th:text="${msg.username}"></div>
+                            <div class="postdate" th:text="${#temporals.format(msg.sharedDate, 'd MMM yyyy / HH:mm')}"></div>
+
+
+                        </div>
+
+
+
+                </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+        </div>
+
+    </body>
+
+    </html>
