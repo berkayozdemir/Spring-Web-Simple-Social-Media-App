@@ -5,10 +5,10 @@
 
 - Spring Web
 - Spring Data JDBC
--  MySQL    
--  Thymeleaf
+-  MySQL
+-  Spring Security
 - Besides login, logout and sign up 
-
+-  Thymeleaf
 
 For more open source projects you can visit [my repository][dill] on GitHub.
 
