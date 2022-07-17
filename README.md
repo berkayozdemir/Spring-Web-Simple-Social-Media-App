@@ -8,6 +8,7 @@
 -  MySQL
 -  Spring Security
 - Besides login, logout and sign up 
+- HTML5,CSS3
 -  Thymeleaf
 
 For more open source projects you can visit [my repository][dill] on GitHub.
